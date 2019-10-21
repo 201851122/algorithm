@@ -22,7 +22,7 @@ def lps(arr,i,j,lookup):
             lookup[i][j]=lps(arr,i+1,j-1,lookup)+2
         else:
             lookup[i][j]=max(lps(arr,i,j-1,lookup),lps(arr,i+1,j,lookup))
-    return lookup[1][m-1]
+    return lookup[i][j]
 
 arr = "1234432112214534"
 n = len(arr) 
