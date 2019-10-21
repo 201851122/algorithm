@@ -7,7 +7,7 @@ def cutRod(price, n):
              mval = max(mval, price[j] + val[i-j-1]) 
         val[i] = mval
   
-    return val[n] 
+    return mval 
   
 
 arr = [1, 5, 8, 9, 15, 11, 15, 20] 

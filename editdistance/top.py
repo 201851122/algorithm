@@ -15,7 +15,7 @@ def editdistance(arr1,arr2,m,n,dp):
         return dp[m-1][n-1]
     if arr1[m-1] == arr2[n-1]:
          dp[m-1][n-1]=editdistance(arr1,arr2,m-1,n-1,dp)
-         return dp[m-1][n-1]
+         
     dp[m-1][n-1]=1+min(editdistance(arr1,arr2,m-1,n-1,dp),editdistance(arr1,arr2,m,n-1,dp),editdistance(arr1,arr2,m-1,n,dp)) 
     return dp[m-1][n-1]
 
